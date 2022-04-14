@@ -1,24 +1,22 @@
 import './App.css';
-import Card from './componets/card/Card.jsx';
 import Header from './componets/header/Header.jsx';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Main } from './pages/main/Main.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <BrowserRouter>
+      <div className="App">
+        <Header />
 
-      <main className='container mt-5'>
-        <h2 className='text-center'>Последние объявления</h2>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/login" element={<h1>Авторизация</h1>} />
+          <Route path="/card/:id" element={<h1>Card</h1>} />
+        </Routes>
 
-        <div className='mt-5 row'>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </div>
-
-      </main>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
