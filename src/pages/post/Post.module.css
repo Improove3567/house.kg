@@ -1,0 +1,19 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main_text{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.input_block{
+    margin-top: 80px;
+    width: 60%;
+}
+
+.btn{
+    margin-left: 400px;
+    margin-top: 30px;
+}

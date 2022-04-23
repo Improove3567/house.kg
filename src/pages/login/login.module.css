@@ -1,0 +1,18 @@
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.inputs_container{
+    margin-top: 200px;
+}
+
+.btn{
+    margin-top: 70px;
+    margin-left: 400px;
+}
+
+.error{
+    color: rgb(246, 75, 75);
+}
