@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project created by Aitegin [House.kg](https://storied-dusk-876558.netlify.app)
+
 
 ## Available Scripts
 
