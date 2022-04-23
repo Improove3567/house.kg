@@ -5,23 +5,13 @@ import { Main } from './pages/main/Main.jsx';
 import Login from './pages/login/Login'
 import Post from './pages/post/Post'
 import MoreCard from './pages/more_card/More_card';
-import { useEffect, useState } from "react";
+
 
 
 
 
 function App() {
-  const [houses, setHouses] = useState([]);
 
-  useEffect(() => {
-    fetch('https://625eaae63b039517f1fa093e.mockapi.io/house')
-      .then((response) => {
-        return response.json()
-      })
-      .then((data) => {
-        setHouses(data)
-      })
-  }, [])
 
 
 

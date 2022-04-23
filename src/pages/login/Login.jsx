@@ -13,16 +13,26 @@ const Login = () => {
     const navigate = useNavigate();
 
 
-    const submit = (e) => {
-        e.preventDefault();
-        if (password == 123 && state == 'admin') {
-            navigate('/post')
 
-            // console.log('bbebe')
-        } else{
+
+    const submit = (e) =>{
+        e.preventDefault();
+        if(state&&password==='admin'){
+            navigate('/post')
+        }else{
             setError(true)
         }
     }
+    // const submit = (e) => {
+    //     e.preventDefault();
+    //     if (password == 123 && state == 'admin') {
+    //         navigate('/post')
+
+    //         // console.log('bbebe')
+    //     } else{
+    //         setError(true)
+    //     }
+    // }
 
     const handleEmail = (e) => {
         setstate(e.target.value)
